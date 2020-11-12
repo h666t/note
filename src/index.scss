@@ -1,0 +1,17 @@
+@import "helper";
+
+*, *:before, *:after, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+body {
+  font-family: $hei;
+  font-size: 12px;
+  line-height: 1.5;
+}
