@@ -19,4 +19,7 @@ export default class App extends Vue {
 
 <style lang="scss">
 @import "index";
+#app{
+  display: flex;
+}
 </style>
