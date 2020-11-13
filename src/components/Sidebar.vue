@@ -35,6 +35,9 @@ import Icon from '@/components/Icon.vue';
   background: $black;
   color: white;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .icon {
   width: 24px;
@@ -50,11 +53,15 @@ import Icon from '@/components/Icon.vue';
   >.logout{
     position: absolute;
     bottom: 20px;
+    white-space: nowrap;
+    left: 50%;
+    transform: translateX(-50%);
   }
   >.tag{
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    margin: 10px 0;
+    padding: 5px 10px;
     justify-content: center;
     align-items: center;
   }
