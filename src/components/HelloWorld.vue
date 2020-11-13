@@ -1,13 +1,15 @@
 <template>
   <div class="hello">
-   hih
+<Sidebar/>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
-
-@Component
+import Sidebar from '@/components/Sidebar.vue';
+@Component({
+  components: {Sidebar}
+})
 export default class HelloWorld extends Vue {
 
 }
