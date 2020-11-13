@@ -2,9 +2,18 @@
   <div  id="sidebar">
     头像
     <div class="icons">
-      <RouterLink exact to="/" >笔记</RouterLink>
-      <RouterLink exact to="/notebooks">笔记本</RouterLink>
-      <RouterLink exact to="/trash/1">回收站</RouterLink>
+      <RouterLink exact to="/" >
+      <Icon name="#home"/>
+        笔记
+      </RouterLink>
+      <RouterLink exact to="/notebooks">
+      <Icon name="#notebook"/>
+        笔记本
+      </RouterLink>
+      <RouterLink exact to="/trash/1">
+      <Icon name="#trash"/>
+        回收站
+      </RouterLink>
       <RouterLink exact to="/login">登录</RouterLink>
     </div>
 
@@ -14,8 +23,10 @@
 <script lang="ts">
 import Vue from 'vue';
 import {Component} from 'vue-property-decorator';
-
-@Component export default class Sidebar extends Vue {
+import Icon from '@/components/Icon.vue';
+@Component({
+  components: {Icon}
+}) export default class Sidebar extends Vue {
 
 }
 </script>
